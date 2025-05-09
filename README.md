@@ -10,4 +10,8 @@ Hardware setup: We connected the sensor MAX30102, which can read us the heart ra
 
 Software: We created this simple GUI with tkinter, which allows us to invoke the sensor reading and the OLLMA LLM when needed. Users can have a normal conversation with the medical agent, or click the “take vital” button to get their vital information and send it to the agent for inference, and get advice and a treatment plan suggested.
 
+With the gguf file, we can create the model by this line:
+
+FROM /path/to/your/gguf/###.Q4_0.gguf
+
 Then copy the model file and the gguf file into the Raspberry Pi, and run the python code medicalgui3.py, it will work fine.
